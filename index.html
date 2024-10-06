@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Walking Pacer</title>
+    <link rel="apple-touch-icon" sizes="128x128" href="calc.png">
+    <link rel="icon" sizes="192x192" href="calc.png">
+    <link rel ="stylesheet" href="pacer.css">
+</head>
+<body>
+<header></header>
+<main>
+    <div id="inputzone">
+        <p id="time" class="active"></p>
+        <p id="distance"></p>
+        <p id="pace"></p>
+        <div id="keypad" class="calculator-grid">
+            <button id="b1">1</button>
+            <button id="b2">2</button>
+            <button id="b3">3</button>
+            <button id="b4">4</button>
+            <button id="b5">5</button>
+            <button id="b6">6</button>
+            <button id="b7">7</button>
+            <button id="b8">8</button>
+            <button id="b9">9</button>
+            <button id="bBackspace">⇦</button>
+            <button id="b0">0</button>
+            <button id="bC">C</button>
+        </div>
+    </div>
+    <div id="livezone">
+        <button id="startButton" class="start-button">Start</button>
+        <p id="live-distance"></p>
+        <p id="average-pace"></p>
+    </div>
+    <div id="inclinezone" onclick="showIncline()">
+        <p id="incline-prompt">◬ Tap to show incline ◬</p>
+    </div>
+</main>
+<footer></footer>
+<script src="madone.js"></script>
+</body>
+</html>
